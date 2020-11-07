@@ -27,8 +27,9 @@ def run_game():
 	stats = GameStats(ai_settings)
 	sb = Scoreboard(ai_settings, screen, stats)
 
-	music = pygame.mixer.music.load('music.wav')
-	pygame.mixer.music.play(-1)
+	#Upload your own background music!
+	# music = pygame.mixer.music.load('music.wav')
+	# pygame.mixer.music.play(-1)
 
 
 	while True:
