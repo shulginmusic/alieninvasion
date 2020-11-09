@@ -87,6 +87,10 @@ def check_keyup_events(event, ship):
 def update_screen(ai_settings, screen, stats,
  ship, aliens_group, bullets, play_button, sb):
 	screen.fill(ai_settings.bg_color)#Fill the screen with color
+	
+	clock = pygame.time.Clock() #set FPS
+	clock.tick(200)
+
 	for bullet in bullets.sprites():
 		bullet.draw_bullet()
 	ship.blitme()#Draw the ship on the screen
@@ -120,9 +124,6 @@ def check_bullet_collisions(ai_settings, screen, ship,
 			stats.score += ai_settings.alien_points * len(aliens)
 			sb.prep_score()
 			check_high_score(stats, sb)
-			# print(collisions)
-			# dictionary example: (you are looping through the value, which is a list)
-			# {<Bullet sprite(in 0 groups)>: [<Alien sprite(in 0 groups)>, <Alien sprite(in 0 groups)>, <Alien sprite(in 0 groups)>]}
 
 	if len(aliens_group) == 0:
 		bullets_group.empty()

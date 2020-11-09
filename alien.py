@@ -1,13 +1,15 @@
 import pygame 
 from pygame.sprite import Sprite
 
+alien_unflipped = pygame.image.load('images/alien.bmp')
+alien_image = pygame.transform.flip(alien_unflipped, False, True)
+
 class Alien(Sprite):
 	def __init__(self, ai_settings, screen):
 		super().__init__()
 		self.screen = screen
 		self.ai_settings = ai_settings
-		alien_unflipped = pygame.image.load('images/alien.bmp')
-		self.image = pygame.transform.flip(alien_unflipped, False, True)
+		self.image = alien_image
 
 		#Rects:
 		self.rect = self.image.get_rect()

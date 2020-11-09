@@ -5,7 +5,8 @@ class GameStats():
 		self.hi_path = 'high_score.txt'
 		with open(self.hi_path) as file_object:
 			self.high_score = file_object.read()
-			self.high_score = int(self.high_score)
+			if self.high_score:
+				self.high_score = int(self.high_score)
 		self.reset_stats()
 
 	def reset_stats(self):#initialize stats that can change during the game
