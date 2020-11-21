@@ -24,9 +24,12 @@ def run_game():
 	stats = GameStats(ai_settings)
 	sb = Scoreboard(ai_settings, screen, stats)
 
+
 	# Upload your own background music!
 	music = pygame.mixer.music.load('ai_music.mp3')
 	pygame.mixer.music.play(-1)
+	#Many thanks to YouTube user 8 bit music for providing the background music
+	#All sound effects come from free mp3 websites with free license
 
 
 	while True:

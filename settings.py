@@ -18,16 +18,16 @@ class Settings():
 		self.bullets_allowed = 3
 
 		#alien settings
-		self.alien_vertical_speed = 10				
+		self.alien_vertical_speed = 15				
 		#How quickly the game speeds up
-		self.speedup_scale = 1.1 #1.1
+		self.speedup_scale = 1.6 #1.1
 		self.score_scale = 1.5
 
 		self.initialize_dynamic_settings()
 
 	def initialize_dynamic_settings(self):
 		self.ship_speed_factor = 1.5 #1.5
-		self.bullet_speed_factor = 3 #5
+		self.bullet_speed_factor = 5 #5
 		self.alien_horizontal_speed = 1 #1 
 		self.fleet_direction = 1 #or -1, switch when the aliens hit an edge
 		self.alien_points = 50
