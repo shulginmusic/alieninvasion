@@ -5,7 +5,7 @@ This is an arcade-style game based on a project from "Python Crash Course" 1st e
 
 Python 3 + PyGame
 
-#Running the Game
+# Running the Game
 
 Run "run_game".py
 
@@ -13,11 +13,11 @@ This screen should appear:
 
 <img src="screenshots/screenshot-1.png"  width="500">
 
-#Playing the game
+# Playing the game
 
 Shoot down all the alien ships before the reach the bottom! You have three lives (see top-left corner of the screen). Every new level the game speeds up!
 
-#Adjusting the settings
+# Adjusting the settings
 
 Go to settings.py
 
